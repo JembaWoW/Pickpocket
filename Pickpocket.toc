@@ -1,0 +1,7 @@
+## Interface: 11200
+## Title: Pickpocket
+## Notes: Displays if you have pickpocked the target
+## Author: Jemba
+## Version: 1.0
+
+Pickpocket.lua
