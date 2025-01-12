@@ -75,3 +75,15 @@ if not GetPlayerBuffID or not CombatLogAdd or not SpellInfo then
 
   PickpocketDisabled = true
 end
+
+SLASH_PICKPOCKET1, SLASH_PICKPOCKET2 = "/pp", "/pickpocket"
+SlashCmdList["PICKPOCKET"] = function(msg)
+    if msg = "reset" then
+        Pickpocketed = {}
+        DEFAULT_CHAT_FRAME:AddMessage("|cffff4d70Pickpocket: All pickpocket information has been reset.")
+    else
+        DEFAULT_CHAT_FRAME:AddMessage("|cffff4d70Pickpocket")
+        DEFAULT_CHAT_FRAME:AddMessage("|cffff4d70/pp reset")
+        DEFAULT_CHAT_FRAME:AddMessage("|cffff4d70/pickpocket reset")
+    end
+end
